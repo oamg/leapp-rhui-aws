@@ -1,6 +1,6 @@
 # Update name of package
 Name:           leapp-rhui-aws
-Version:        1.0.20
+Version:        1.0.21
 Release:        1%{?dist}
 Summary:        Leapp in-place upgrade cloud specific package
 
@@ -318,6 +318,9 @@ exit 0
 
 
 %changelog
+* Mon Nov 23 2026 Karolina Kula <kkula@redhat.com> 1.0.21-1
+- Handle obsolete certificates and map the Extensions repo
+
 * Wed Sep 23 2026 Martin Minar <mminar@redhat.com> 1.0.20-1
 - leapp(aws): add RHEL9 HA package (mhecko@redhat.com)
 - Fix codeready-builder-for-rhel-10-rhui-rpms repo definition for AWS

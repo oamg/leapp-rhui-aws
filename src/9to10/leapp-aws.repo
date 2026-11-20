@@ -1,3 +1,14 @@
+[rhel-10-appstream-rhui-debug-rpms]
+name=Red Hat Enterprise Linux 10 for $basearch - AppStream from RHUI (Debug RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/$releasever/$basearch/appstream/debug
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-debug.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-debug.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
 [rhel-10-appstream-rhui-rpms]
 name=Red Hat Enterprise Linux 10 for $basearch - AppStream from RHUI (RPMs)
 mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/$releasever/$basearch/appstream/os
@@ -7,6 +18,28 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 sslverify=1
 sslclientkey=/etc/pki/rhui/content-rhel10.key
 sslclientcert=/etc/pki/rhui/product/content-rhel10.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[rhel-10-appstream-rhui-source-rpms]
+name=Red Hat Enterprise Linux 10 for $basearch - AppStream from RHUI (Source RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/$releasever/$basearch/appstream/source/SRPMS
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-source.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-source.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[rhel-10-baseos-rhui-debug-rpms]
+name=Red Hat Enterprise Linux 10 for $basearch - BaseOS from RHUI (Debug RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/$releasever/$basearch/baseos/debug
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-debug.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-debug.crt
 sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
 
 [rhel-10-baseos-rhui-rpms]
@@ -20,6 +53,28 @@ sslclientkey=/etc/pki/rhui/content-rhel10.key
 sslclientcert=/etc/pki/rhui/product/content-rhel10.crt
 sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
 
+[rhel-10-baseos-rhui-source-rpms]
+name=Red Hat Enterprise Linux 10 for $basearch - BaseOS from RHUI (Source RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/$releasever/$basearch/baseos/source/SRPMS
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-source.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-source.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[codeready-builder-for-rhel-10-rhui-debug-rpms]
+name=Red Hat CodeReady Linux Builder for RHEL 10 $basearch from RHUI (Debug RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/$releasever/$basearch/codeready-builder/debug
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-debug.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-debug.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
 [codeready-builder-for-rhel-10-rhui-rpms]
 name=Red Hat CodeReady Linux Builder for RHEL 10 $basearch from RHUI (RPMs)
 mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/$releasever/$basearch/codeready-builder/os
@@ -27,8 +82,30 @@ enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 sslverify=1
-sslclientkey=/etc/pki/rhui/content-rhel10.key
 sslclientcert=/etc/pki/rhui/product/content-rhel10.crt
+sslclientkey=/etc/pki/rhui/content-rhel10.key
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[codeready-builder-for-rhel-10-rhui-source-rpms]
+name=Red Hat CodeReady Linux Builder for RHEL 10 $basearch from RHUI (Source RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/$releasever/$basearch/codeready-builder/source/SRPMS
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-source.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-source.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[rhel-10-supplementary-rhui-debug-rpms]
+name=Red Hat Enterprise Linux 10 for $basearch - Supplementary from RHUI (Debug RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/$releasever/$basearch/supplementary/debug
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-debug.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-debug.crt
 sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
 
 [rhel-10-supplementary-rhui-rpms]
@@ -40,6 +117,83 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 sslverify=1
 sslclientkey=/etc/pki/rhui/content-rhel10.key
 sslclientcert=/etc/pki/rhui/product/content-rhel10.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[rhel-10-supplementary-rhui-source-rpms]
+name=Red Hat Enterprise Linux 10 for $basearch - Supplementary from RHUI (Source RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/$releasever/$basearch/supplementary/source/SRPMS
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-source.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-source.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[rhel-10-extensions-rhui-rpms]
+name=Red Hat Enterprise Linux 10 - Extensions from RHUI (RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/10/$basearch/extensions/os
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[rhel-10-extensions-rhui-source-rpms]
+name=Red Hat Enterprise Linux 10 - Extensions from RHUI (Source RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/10/$basearch/extensions/source/SRPMS
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-source.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-source.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[rhel-10-extensions-rhui-debug-rpms]
+name=Red Hat Enterprise Linux 10 - Extensions from RHUI (Debug RPMs)
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/10/$basearch/extensions/debug
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-debug.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-debug.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[rhel-10-rt-rhui-rpms]
+name=Red Hat Enterprise Linux 10 - Real Time (RPMs) from RHUI
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/10/$basearch/rt/os
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[rhel-10-rt-rhui-debug-rpms]
+name=Red Hat Enterprise Linux 10 - Real Time (Debug RPMs) from RHUI
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/10/$basearch/rt/debug
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-debug.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-debug.crt
+sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
+
+[rhel-10-rt-rhui-source-rpms]
+name=Red Hat Enterprise Linux 10 - Real Time (Source RPMs) from RHUI
+mirrorlist=https://rhui.REGION.aws.ce.redhat.com/pulp/mirror/content/dist/rhel10/rhui/10/$basearch/rt/source/SRPMS
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify=1
+sslclientkey=/etc/pki/rhui/content-rhel10-source.key
+sslclientcert=/etc/pki/rhui/product/content-rhel10-source.crt
 sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt
 
 [rhui-client-config-server-10]
